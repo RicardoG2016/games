@@ -1,0 +1,74 @@
+body {
+  text-align: center;
+  background-color: #FFFFFF;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.center {
+  margin: 5px auto 90px;
+  text-align: center;
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.title {
+  font-size: 90px;
+  padding: 40px;
+  color: #2c3e50;
+}
+
+canvas {
+  background-color: #bdc3c7;
+  border: 2px;
+  border-color: #7e8c8d;
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transition: -ms-transform 1s;
+  -webkit-transition: -o-transform 1s;
+  -webkit-transition: -moz-transform 1s;
+  -webkit-transition: transform 1s;
+}
+
+canvas:hover {
+  width: 51px;
+  height: 49px;
+  opacity: 0.7;
+}
+
+.reloadButton {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 30px
+}
+
+.reloadButton:hover {
+  font-size: 35px;
+}
+
+@media only screen and (max-device-width : 736px) 
+and (orientation : portrait) { 
+  .body{
+    margin-top: 50%;
+    background-color: blue;
+  }
+  .title{
+    font-size: 40px;
+    padding: 30px 20px;
+  }
+  div.center{
+    margin-bottom: 60px;
+  }
+  body{
+    height: 100vh;
+  }
+  canvas{
+    height: 37px;
+    width: 37px; 
+  }
+  canvas:hover {
+  width: 39px;
+  height: 36px;
+  opacity: 0.7;
+}
+}

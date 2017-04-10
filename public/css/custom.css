@@ -1,0 +1,38 @@
+.content{
+  position: relative;
+}
+
+.jumbotron{
+  margin-top: 20%;
+  /*min-height:300vh;*/
+  min-width:100%;
+  text-align: center;
+  vertical-align: center;
+  position: absolute;
+}
+
+
+hr{
+  padding-top: 100px;
+  margin-top: 100px;
+}
+
+@media only screen and (max-device-width : 736px) 
+and (orientation : portrait) { 
+  .jumbotron{
+    background-color: white;
+    margin-top: 64px;
+    padding-top: 40%;
+    padding-bottom: 43%;
+  }
+
+.container{
+  height: 100%;
+}
+
+.game{
+  height: 50%;
+  background-color: blue;
+}
+
+}

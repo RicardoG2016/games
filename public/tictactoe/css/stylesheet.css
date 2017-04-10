@@ -1,0 +1,74 @@
+.g-body {
+  text-align: center;
+  background-color: #1c1c1c;
+  font-family: 'Roboto', sans-serif;
+}
+
+.center {
+    margin: 5px auto 90px;
+    text-align: center;
+}
+
+.title {
+  font-size: 90px;
+  padding: 40px;
+  color: white;
+}
+
+canvas {
+  background: skyblue;
+  -webkit-transition: -webkit-transform 1s;
+  -webkit-transition: -ms-transform 1s;
+  -webkit-transition: -o-transform 1s;
+  -webkit-transition: -moz-transform 1s;
+  -webkit-transition: transform 1s;
+  box-shadow: 20px 20px 50px #1c1c1c;
+}
+
+canvas:hover {
+  width: 102px;
+  height: 98px;
+}
+
+.reloadButton {
+  text-decoration: none;
+  color: white;
+  font: 30px tahoma;
+  padding-right: 20px;
+}
+
+.reloadButton:hover {
+  font-size: 35px;
+  text-shadow: 5px 10px 30px white;
+}
+
+.back{
+  padding-right: 0px;
+}
+
+@media only screen and (max-device-width : 736px) 
+and (orientation : portrait) { 
+  .body{
+    margin-top: 60%;
+  }
+  .title{
+    font-size: 50px;
+    padding: 30px;
+  }
+  div.center{
+    margin-bottom: 60px;
+  }
+  body{
+    height: 100vh;
+  }
+  canvas{
+    height: 77px;
+    width: 77px;
+  }
+  canvas:hover {
+  width: 78px;
+  height: 76px;
+}
+
+}
+
