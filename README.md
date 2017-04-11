@@ -1,6 +1,6 @@
 # Games
 
-Play tic tac toe or connect 4 against the computer or phone.
+Play tic tac toe or connect 4 against the computer.
 
 ### The Games app was built with:
 - HTML, CSS, JS, JQUERY, BOOTSTRAP
