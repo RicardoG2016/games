@@ -74,33 +74,40 @@ function draw0Steps(x){
 
   function checkWinner(){
     if (isResult == false){
-      if (content[1] == 'x' && content[2] == 'x' && content[3] == 'x') showWinner('You Win!');
-      else if (content[4] == 'x' && content[5] == 'x' && content[6] == 'x') showWinner('You Win!');
-      else if (content[7] == 'x' && content[8] == 'x' && content[9] == 'x') showWinner('You Win!');
-      else if (content[1] == 'x' && content[4] == 'x' && content[7] == 'x') showWinner('You Win!');
-      else if (content[2] == 'x' && content[5] == 'x' && content[8] == 'x') showWinner('You Win!');
-      else if (content[3] == 'x' && content[6] == 'x' && content[9] == 'x') showWinner('You Win!');
-      else if (content[1] == 'x' && content[5] == 'x' && content[9] == 'x') showWinner('You Win!');
-      else if (content[3] == 'x' && content[5] == 'x' && content[7] == 'x') showWinner('You Win!');
-      else if (content[1] == 'o' && content[2] == 'o' && content[3] == 'o') showWinner('You Lost!');
-      else if (content[4] == 'o' && content[5] == 'o' && content[6] == 'o') showWinner('You Lost!');
-      else if (content[7] == 'o' && content[8] == 'o' && content[9] == 'o') showWinner('You Lost!');
-      else if (content[1] == 'o' && content[4] == 'o' && content[7] == 'o') showWinner('You Lost!');
-      else if (content[2] == 'o' && content[5] == 'o' && content[8] == 'o') showWinner('You Lost!');
-      else if (content[3] == 'o' && content[6] == 'o' && content[9] == 'o') showWinner('You Lost!');
-      else if (content[1] == 'o' && content[5] == 'o' && content[9] == 'o') showWinner('You Lost!');
-      else if (content[3] == 'o' && content[5] == 'o' && content[7] == 'o') showWinner('You Lost!');
-      else if (turnCount == 9) showWinner('Draw!!');
+      if (content[1] == 'x' && content[2] == 'x' && content[3] == 'x') showWinner('won');
+      else if (content[4] == 'x' && content[5] == 'x' && content[6] == 'x') showWinner('won');
+      else if (content[7] == 'x' && content[8] == 'x' && content[9] == 'x') showWinner('won');
+      else if (content[1] == 'x' && content[4] == 'x' && content[7] == 'x') showWinner('won');
+      else if (content[2] == 'x' && content[5] == 'x' && content[8] == 'x') showWinner('won');
+      else if (content[3] == 'x' && content[6] == 'x' && content[9] == 'x') showWinner('won');
+      else if (content[1] == 'x' && content[5] == 'x' && content[9] == 'x') showWinner('won');
+      else if (content[3] == 'x' && content[5] == 'x' && content[7] == 'x') showWinner('won');
+      else if (content[1] == 'o' && content[2] == 'o' && content[3] == 'o') showWinner('lost');
+      else if (content[4] == 'o' && content[5] == 'o' && content[6] == 'o') showWinner('lost');
+      else if (content[7] == 'o' && content[8] == 'o' && content[9] == 'o') showWinner('lost');
+      else if (content[1] == 'o' && content[4] == 'o' && content[7] == 'o') showWinner('lost');
+      else if (content[2] == 'o' && content[5] == 'o' && content[8] == 'o') showWinner('lost');
+      else if (content[3] == 'o' && content[6] == 'o' && content[9] == 'o') showWinner('lost');
+      else if (content[1] == 'o' && content[5] == 'o' && content[9] == 'o') showWinner('lost');
+      else if (content[3] == 'o' && content[5] == 'o' && content[7] == 'o') showWinner('lost');
+      else if (turnCount == 9) showWinner('d');
     };
   };
 
-  function showWinner(x){
+  function showWinner(winner){
     setTimeout(function(){
       isResult = true;
-      alert(x)
+      if(winner == 'won'){
+        $("#won").css("display", "block");
+      }else if(winner == 'lost'){
+        $("#lost").css("display", "block");  
+      }else if(winner == 'd'){
+        $("#draw").css("display", "block");
+      }
       for (var i = 1; i < 10; i++) bDisabled[i] = true;
     }, 350);
   };
+
 
 
 

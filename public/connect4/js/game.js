@@ -29,10 +29,10 @@ $(document).ready(function(){
   function checkScore(playerScore, cpuScore){
     if(playerScore == 3){
       gameResult = true;
-      alert("You Win!");
+      $("#won").css("display", "block");
     }else if(cpuScore == 3){
       gameResult = true;
-      alert("You Lose!");
+      $("#lost").css("display", "block"); 
     };
   };
 
@@ -121,7 +121,7 @@ function checkWinner(){
     if(gameResult == false){
       if(turnCount == 42){
         gameResult = true; 
-        alert("Draw!!");
+        $("#draw").css("display", "block");
       };
     hTest(content, playerScore, cpuScore, previous);
     vTest(content, playerScore, cpuScore, previous);

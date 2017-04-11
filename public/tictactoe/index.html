@@ -5,23 +5,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta charset="UTF-8">
   <title>Tic Tac Toe</title>
+
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 <link rel="stylesheet" href="../css/bootstrap.min.css" media="screen">
+
 <!-- Google fonts -->
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 <!-- jQuery library -->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   
 </head>
 <body class="g-body">
+
+  <div id="won" style="display: none;" class="alert alert-dismissible alert-success">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Well done! You Win!!</strong>
+  </div>
+
+  <div id="lost" style="display: none;" class="alert alert-dismissible alert-danger">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <h4>You Lose! Try Again.</h4>
+  </div>
+
+  <div id="draw" style="display: none;" class="alert alert-dismissible alert-warning">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <h4>Draw! Try Again.</h4>
+  </div>
+
+
   <div class="center">
     <h1 class="title">Tic Tac Toe</h1>
     <canvas id=canvas1 height="100" width="100" onclick="loop(1)"></canvas>
@@ -46,8 +66,8 @@
 <button class="btn-large btn btn-default"><a href="../index.html">Home</a></button>
 
 
-
-
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> -->
+  <!-- <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> -->
   <script src="js/main.js"></script>
 </body>
 </html>

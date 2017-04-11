@@ -4,10 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta charset="UTF-8">
-
   <title>Connect 4</title>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" href="../css/bootstrap.min.css" media="screen">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -15,6 +13,22 @@
 </head>
 <body>
 <div class="center">
+<!-- alerts -->
+  <div id="won" style="display: none;" class="alert alert-dismissible alert-success">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Well done! You Win!!</strong>
+  </div>
+
+  <div id="lost" style="display: none;" class="alert alert-dismissible alert-danger">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <h4>You Lose! Try Again.</h4>
+  </div>
+
+  <div id="draw" style="display: none;" class="alert alert-dismissible alert-warning">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <h4>Draw! Try Again.</h4>
+  </div>
+<!-- game board -->
   <h1 class="title">Connect 4</h1>
     <canvas id=canvas1 height="50" width="50" >1</canvas>
     <canvas id=canvas2 height="50" width="50" >2</canvas>
@@ -66,16 +80,16 @@
     <br>
 </div>
 
-<!-- <a class="reloadButton" href="index.html" >Play Again</a> -->
-<!-- <span class="reloadButton">/</span> -->
-<!-- <a class="reloadButton back" href="../index.html">Home</a> -->
 <button class="btn-large btn btn-default"><a href="index.html">Play Again!</a></button>
 <button class="btn-large btn btn-default"><a href="../index.html">Home</a></button>
 
+<!-- scripts -->
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/game.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<script type="text/javascript" src="js/game.js"></script>
 
 </body>
 </html>
