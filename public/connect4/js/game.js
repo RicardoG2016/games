@@ -27,10 +27,10 @@ $(document).ready(function(){
   function buttonId(cell) {return cell.id.match(/\d/g).join("")};
 
   function checkScore(playerScore, cpuScore){
-    if(playerScore == 3){
+    if(playerScore == 3 && gameResult == false){
       gameResult = true;
       $("#won").css("display", "block");
-    }else if(cpuScore == 3){
+    }else if(cpuScore == 3 && gameResult == false){
       gameResult = true;
       $("#lost").css("display", "block"); 
     };
