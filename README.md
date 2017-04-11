@@ -1,2 +1,5 @@
-# games
-The repo will contain games i'll created in a central location to lost on firebase.
+# Games
+
+##Games include tic tac toe and connect 4. To play click link below.
+
+https://games-7bbe7.firebaseapp.com/
